@@ -72,7 +72,6 @@ function CrudAdd(props) {
 					<input
 						name="email"
 						type="email"
-						pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$"
 						required
 						value={crud.email}
 						onChange={handleChange}
@@ -99,7 +98,6 @@ function CrudAdd(props) {
 						onChange={handleChange}
 						className="form-control"
 					/>
-					<small>Formato: https://yourlink.ext</small>
 				</div>
 
 				<div className="form-group">
