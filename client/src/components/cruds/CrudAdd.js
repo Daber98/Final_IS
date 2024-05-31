@@ -20,10 +20,11 @@ function CrudAdd(props) {
 		//if (!crud.companyName || !crud.email) return;
 		async function postCrud() {
 			try {
+				console.log("Sending data:", crud);
 				const response = await post(`${process.env.REACT_APP_API_URL}`, crud);
 				navigate(`/cruds/${response.data._id}`);
 			} catch (error) {
-				console.log("error", error);
+				console.log("error", error.response.data);
 			}
 		}
 		postCrud();
@@ -105,7 +106,7 @@ function CrudAdd(props) {
 					<label>Descripción</label>
 					<textarea
 						name="description"
-						row="10"
+						rows="10"
 						value={crud.description}
 						onChange={handleChange}
 						className="form-control"
