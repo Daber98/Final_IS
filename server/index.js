@@ -15,8 +15,8 @@ app.use(express.json());
 
 // CORS configuration
 const allowedOrigins = [
-	'http://shoppr-web-alb-1430224941.us-east-1.elb.amazonaws.com',
-	'http://shoppr-web-alb-1430224941.us-east-1.elb.amazonaws.com'
+	'http://shoppr-web-alb-1257490238.us-east-1.elb.amazonaws.com',
+	'http://shoppr-web-alb-1257490238.us-east-1.elb.amazonaws.com'
   ];
   
   app.use(cors({
