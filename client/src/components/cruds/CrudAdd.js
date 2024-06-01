@@ -44,7 +44,7 @@ function CrudAdd(props) {
 			<hr />
 			<form onSubmit={handleSubmit}>
 				<div className="form-group">
-					<label>Nombre de la Compañia</label>
+					<label>Nombre</label>
 					<input
 						name="companyName"
 						type="text"
