@@ -21,4 +21,4 @@ const crudSchema = new mongoose.Schema({
 	},
 });
 
-module.exports = mongoose.model("Crud", crudSchema, "Cruds");
+module.exports = mongoose.model("Crud", crudSchema, "Crud");

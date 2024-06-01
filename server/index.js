@@ -13,9 +13,7 @@ connection();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.use(cors({
-  origin: 'http://shoppr-web-alb-974193603.us-east-1.elb.amazonaws.com'
-}));
+app.use(cors());
 
 app.use((req, res, next) => {
   res.locals.path = req.path;
