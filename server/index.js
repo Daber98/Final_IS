@@ -14,7 +14,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 const corsOptions = {
-  origin: 'http://shoppr-web-alb-108717195.us-east-1.elb.amazonaws.com',
+  origin: 'http://shoppr-web-alb-974193603.us-east-1.elb.amazonaws.com',
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization'], 
 };
