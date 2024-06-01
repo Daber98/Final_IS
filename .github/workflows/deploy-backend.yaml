@@ -20,7 +20,7 @@ jobs:
         working-directory: server
         run: |
           npm install
-          echo MONGODB_URI="mongodb+srv://daber:12345@cluster0.ttmkbgx.mongodb.net/MERNCRUD?retryWrites=true&w=majority" > .env
+          echo MONGODB_URI="mongodb+srv://Frnn:noobculo@mongocluster.o2eojyk.mongodb.net/snappy?retryWrites=true&w=majority" > .env
 
       - name: Set up SSH key
         run: |
@@ -58,7 +58,7 @@ jobs:
         working-directory: server
         run: |
           npm install
-          echo MONGODB_URI="mongodb+srv://daber:12345@cluster0.ttmkbgx.mongodb.net/MERNCRUD?retryWrites=true&w=majority" > .env
+          echo MONGODB_URI="mongodb+srv://Frnn:noobculo@mongocluster.o2eojyk.mongodb.net/snappy?retryWrites=true&w=majority" > .env
 
       - name: Set up SSH key
         run: |
