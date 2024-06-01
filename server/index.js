@@ -13,24 +13,7 @@ connection();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-// CORS configuration
-const allowedOrigins = [
-  'http://shoppr-web-alb-108717195.us-east-1.elb.amazonaws.com',
-  'http://localhost:3000'
-];
-
-app.use(cors({
-  origin: function (origin, callback) {
-    // Allow requests with no origin (like mobile apps or curl requests)
-    if (!origin) return callback(null, true);
-    if (allowedOrigins.indexOf(origin) === -1) {
-      const msg = 'The CORS policy for this site does not allow access from the specified origin.';
-      return callback(new Error(msg), false);
-    }
-    return callback(null, true);
-  },
-  credentials: true
-}));
+app.use(cors());
 
 app.use((req, res, next) => {
   res.locals.path = req.path;

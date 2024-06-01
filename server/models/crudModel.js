@@ -9,6 +9,7 @@ const crudSchema = new mongoose.Schema({
 	},
 	email: {
 		type: String,
+		required: [true, "Email is required"],
 	},
 	location: {
 		type: String,
